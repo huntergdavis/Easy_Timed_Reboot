@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" ads:adUnitId="a14e0215d0d596c"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+
+	<TextView android:text="Select a Time to Reboot:" android:id="@+id/belowtext"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+
+	<TimePicker android:id="@+id/timePicker1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TimePicker>
+
+	<TableRow android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/frequencytable">
+		<Button android:id="@+id/enablebutton" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Enable Alarm" />
+		<Button android:id="@+id/disablebutton" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Disable Alarm" />
+
+	</TableRow>
+	
+	<Button android:id="@+id/rebootbutton" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:text="Or Just Click Here To Reboot Now" />
+	
+
+
+</LinearLayout>
